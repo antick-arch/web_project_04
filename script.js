@@ -25,5 +25,6 @@ animation();
 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#container'),
-    smooth: true
+    smooth: true,
+    lerp:1.1
 });
