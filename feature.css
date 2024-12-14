@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+section{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+/*nav start*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+
+}
+nav h1{
+    font-size: 50px;
+
+}
+nav h4{
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+nav button{
+    padding: 10px 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    border: 1px solid #000;
+}
+/*nav end*/
+.center{
+    height: 70%;
+    width: 100%;
+    padding: 80px;
+    
+    display: flex;
+}
+.page1{
+    height: 100%;
+    width: 40%;
+}
+.page1 h1{
+    font-size: 70px;
+    padding-top: 70px;
+}
+.page1 p{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.page1 button{
+    background-color: #000;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 15px;
+}
+.page2{
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+.page2 img{
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.section2{
+    margin-top: 60px;
+}
+.section2 .services{
+    padding: 40px 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.services h3{
+    background-color: #9AE975;
+    font-weight: 500;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 50px;
+}
+.services p{
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    padding: 30px 120px;
+}
+.bottom img{
+    height: 60px;
+}
