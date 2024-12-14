@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Layout</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            <h2>Contact With Me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse omnis, error soluta ab voluptatibus labore, non ea ipsa maxime repellendus itaque nostrum! Culpa, tenetur quaerat fugit ducimus veniam sed ut.</p>
+        </div>
+        <div class="div2">
+            <form action="contact.php" method="post">
+                <label for="name">Enter Your Full Name</label>
+                <input class="wd" type="text" id="name" name="name" required>
+                
+                <label for="email">Enter Your Mail Address</label>
+                <input class="wd" type="email" id="email" name="email" required>
+                
+                <label for="comments">Write Your Messages Here</label>
+                <textarea class="wd" id="comments" name="comments" required></textarea><br>
+                
+                <button id="send" type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
