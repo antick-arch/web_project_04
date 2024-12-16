@@ -30,7 +30,7 @@ nav h1{
 
 }
 nav h4{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     
 }
@@ -122,4 +122,50 @@ nav button{
 }
 .bottom img{
     height: 60px;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 40px 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box{
+    flex-shrink: 0;
+    height: 400px;
+    width: 45%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+}
+.div1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    padding: 45px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.div2{
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.div2 img{
+    height: 60%;
+    width: 60%;
+   
+}
+.div1 h2{
+    font-size: 27px;
+    background-color: #9AE975;
+}
+.div1 h4{
+    font-size: 35px;
 }
