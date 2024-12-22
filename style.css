@@ -139,18 +139,17 @@ html, body {
 .img-div {
     height: 40vw;
     width: 30vw;
-    background-color: red;
     position: relative;
     overflow: hidden;
     margin: 20px;
-    transition: transform 0.5s ease; /* Added transition for smooth scaling */
+    transition: transform 0.5s ease; 
 }
 
 .img-div img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.5s ease; /* Added transition for smooth scaling */
+    transition: transform 0.5s ease; 
 }
 
 .overlay {
@@ -186,7 +185,7 @@ html, body {
 }
 
 .img-div:hover img {
-    transform: scale(1.2); /* Changed scale to transform for proper animation */
+    transform: scale(1.2); 
 }
 
 .img-container {
@@ -196,7 +195,7 @@ html, body {
     flex-wrap: wrap;
 }
 
-/* Media Queries for Responsiveness */
+
 @media screen and (max-width: 1024px) {
     #nav {
         padding: 20px 30px;
