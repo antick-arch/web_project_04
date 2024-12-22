@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antick's Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,25 +19,30 @@
     </div>
     <div id="nav">
         <nav class="navbar">
-            <div>
-              <img cla ss="logo" src="image/logo.png.webp" alt="logo" />
+            <div class="logo">
+              <img src="image/logo.png.webp" alt="logo" />
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <ul class="nav-links">
               <li><a href="index.html">HOME</a></li>
-              <li><a href="feature.html">FEATURE</a></li>
               <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="feature.html">FEATURE</a></li>
               <li><a href="about.html">ABOUT</a></li>
               <li><a href="#" id="dark">DARK</a></li>
               <li><a href="#" id="light">LIGHT</a></li>
             </ul>
-          </nav >
+          </nav>
     </div>
     <div id="container">
-        <div id="page1" >
+        <div id="page1" data-scroll data-scroll-speed="-2.5">
             <h1><em>Highlighting Creativity, Expertise, and Passion in Every Project Displayed</em></h1>
         </div>
 
-        <div id="page2" >
+        <div id="page2" data-scroll data-scroll-speed="1">
             <div class="line">
                 <div class="img-container">
                     <div class="img-div">
@@ -60,55 +66,54 @@
                 
             </div>
             </div>
-            <div class="line" >
+            <div class="line">
                 <div class="img-container">
                     <div class="img-div">
                         <div class="overlay">
                             <p>Photographer Outdoors with Gear</p>
                         </div>
-                        <img src="image/pic 4.jpg" alt="pic1">
+                        <img src="image/pic 4.jpg" alt="pic4">
                     </div>
                     <div class="img-div">
                         <div class="overlay">
                             <p>Photographer Outdoors with Gear</p>
                         </div>
-                        <img src="image/pic 5.jpg" alt="pic2">
+                        <img src="image/pic 5.jpg" alt="pic5">
                     </div>
                     <div class="img-div">
                         <div class="overlay">
                             <p>Photographer Outdoors with Gear</p>
                         </div>
-                        <img src="image/pic 6.jpg" alt="pic3">
+                        <img src="image/pic 6.jpg" alt="pic6">
                     </div>
                     
             </div>
             </div>
-            <div class="line" >
+            <div class="line">
                 <div class="img-container">
                     <div class="img-div">
                         <div class="overlay">
                             <p>Photographer Outdoors with Gear</p>
                         </div>
-                        <img src="image/pic 7.jpg" alt="pic1">
+                        <img src="image/pic 7.jpg" alt="pic7">
                     </div>
                     <div class="img-div">
                         <div class="overlay">
                             <p>Photographer Outdoors with Gear</p>
                         </div>
-                        <img src="image/pic 8.jpg" alt="pic2">
+                        <img src="image/pic 8.jpg" alt="pic8">
                     </div>
                     <div class="img-div">
                         <div class="overlay">
                             <p>Photographer Outdoors with Gear</p>
                         </div>
-                        <img src="image/pic 9.jpg" alt="pic3">
+                        <img src="image/pic 9.jpg" alt="pic9">
                     </div>
                 
             </div>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>

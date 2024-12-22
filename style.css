@@ -1,14 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html , body{
+html, body {
     height: 100%;
     width: 100%;
 }
-#back-ward{
+
+#back-ward {
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -20,7 +21,8 @@ html , body{
     justify-content: center;
     text-align: center; 
 }
-#back-ward h1{
+
+#back-ward h1 {
     font-size: 6.9vw;
     font-weight: 100;
     line-height: 7vw;
@@ -28,37 +30,37 @@ html , body{
     z-index: 9;
     position: relative;
 }
-#back-ward video{
+
+#back-ward video {
     height: 100%;
     width: 100%;
     position: absolute;
     object-fit: cover;
     z-index: 6;
 }
-#back1{
+
+#back1, #back2 {
     height: 100%;
     width: 100%;
-    background-color: #007BFF;
+    background-color: #fbff00;
     position: absolute;
+}
+
+#back1 {
     z-index: 8;
 }
-#back2{
-    height: 100%;
-    width: 100%;
-    background-color: #007BFF;
-    position: absolute;
+
+#back2 {
     z-index: 7;
 }
-#nav{
+
+#nav {
     position: absolute;
     width: 100%;
     padding: 30px 50px;
     z-index: 10;
     background-color: #c0ece43b;
-
 }
-
-
 
 #nav > .navbar {
     display: flex;
@@ -92,45 +94,66 @@ html , body{
     transition-duration: 1s;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
-#page1{
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+#page1 {
     height: 100vh;
     width: 100%;
-    background-color: #007BFF;
+    background-color: #fbff00;
     color: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-#page1 h1{
+
+#page1 h1 {
     font-size: 6.9vw;
     font-weight: 100;
     line-height: 7vw;
     letter-spacing: -3px;
 }
-#page2{
+
+#page2 {
     min-height: 100vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
-.img-container{
+
+.img-container {
     padding: 30px;
 }
-.img-div{
+
+.img-div {
     height: 40vw;
     width: 30vw;
     background-color: red;
     position: relative;
     overflow: hidden;
     margin: 20px;
+    transition: transform 0.5s ease; /* Added transition for smooth scaling */
 }
-.img-div img{
+
+.img-div img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease; /* Added transition for smooth scaling */
 }
-.overlay{
+
+.overlay {
     height: 100%;
     width: 100%;
     background-color: #0000003f;
@@ -142,7 +165,8 @@ html , body{
     transition: all ease 0.5s;
     z-index: 9;
 }
-.overlay p{
+
+.overlay p {
     font-size: 2.5vw;
     text-transform: uppercase;
     text-align: center;
@@ -152,29 +176,34 @@ html , body{
     transition-delay: 0.2s;
     opacity: 0;
 }
-.img-div:hover .overlay{
+
+.img-div:hover .overlay {
     background-color: #000;
 }
-.img-div:hover .overlay p{
+
+.img-div:hover .overlay p {
     opacity: 1;
 }
-.img-div:hover img{
-    scale: 1.2;
+
+.img-div:hover img {
+    transform: scale(1.2); /* Changed scale to transform for proper animation */
 }
-.img-container{
+
+.img-container {
     padding: 30px;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    #nav {
+        padding: 20px 30px;
+    }
 
-
-
-@media screen and (max-width: 768px) {
-    #back-ward h1 {
-        font-size: 8vw;
+    .nav-links {
+        gap: 5px;
     }
 
     #page1 h1 {
@@ -182,12 +211,51 @@ html , body{
     }
 
     .img-div {
-        width: 80vw;
+        width: 45vw;
         height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav {
+        padding: 15px 20px;
     }
 
     .nav-links {
         flex-direction: column;
         gap: 5px;
+    }
+
+    #page1 h1 {
+        font-size: 10vw;
+    }
+
+    .img-div {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #nav {
+        padding: 10px 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    #page1 h1 {
+        font-size: 12vw;
+    }
+
+    .img-div {
+        width: 90vw;
+        height: auto;
+    }
+
+    .overlay p {
+        font-size: 4vw;
     }
 }
